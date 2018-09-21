@@ -25,3 +25,33 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Project Setup
+
+```
+ng new crud-firestore-brad --routing --style scss
+npm i materialize-css jquery font-awesome
+npm install @angular/fire firebase —save
+```
+
+angular.json (bring in fa, materialize, jquery..)
+```
+            "styles": [
+              "src/styles.scss",
+              "./node_modules/font-awesome/css/font-awesome.css",
+              "./node_modules/materialize-css/dist/css/materialize.css"
+            ],
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.js",
+              "./node_modules/materialize-css/dist/js/materialize.js"
+            ]
+```
+
+create components / services
+
+```
+ng g c components/items
+ng g s services/item
+```
+
+

@@ -52,6 +52,20 @@ create components / services
 ```
 ng g c components/items
 ng g s services/item
+ng g c components/add-item
+ng g c components/navbar  
+
 ```
 
+Build for Production
 
+app.module.ts:
+```
+import {environment} from '../environments/environment.prod';
+// import {environment} from '../environments/environment';
+```
+
+```
+ng build --prod
+
+```
